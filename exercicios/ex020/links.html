@@ -6,11 +6,47 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Links
   </title>
+  <style>
+      a {
+        color: red;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      a:visited {
+        color: brown;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      a:active {
+        color: yellow;
+      }
+
+      a::after {
+        content: ' (link)';
+        color: blueviolet;
+      }
+
+      a::before {
+        content: "->";
+        color: chocolate;
+      }
+
+      .special {
+        background-color: aqua;
+      }
+  </style>
 </head>
 <body>
     <h1>Personalizando links</h1> 
     <ul>
-      <li>Repository Github</li>
+      <li><a href="https://github.com/joaopioner1/Html-CSS_GuanabaraCourse">Repository Github</a></li>
+      <li><a href="https://www.instagram.com/?hl=pt-br">Instagram</a></li>
+      <li><a href="https://www.youtube.com/watch?v=vMlrcOVr7po&t=169s" class="special">YouTube</a></li>
+      <li><a href="Nothing">YouTube</a></li>
     </ul>
 </body>
 </html>
